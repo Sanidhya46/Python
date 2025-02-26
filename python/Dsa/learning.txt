@@ -1,0 +1,117 @@
+1). by default input return string
+
+2). In python return statetement never come inside in loop , it immidiately exits the loop
+
+3). Built-in Functions ---- Predefined in Python (e.g., print(), len())
+
+# User-Defined Functions --- Created using def by the user
+# Lambda Functions --- Anonymous one-line functions using lambda
+# Recursive Functions ---  Functions that call themselves
+# Higher-Order Functions --- Functions that take or return another function
+# Generator Functions --- Use yield instead of return for lazy evaluation
+# Nested Functions ---	Functions defined inside other functions
+# Decorator Functions --- Modify the behavior of other functions
+
+4). ['ArithmeticError', 'AssertionError', 'AttributeError', 'BaseException', 'BaseExceptionGroup', 'BlockingIOError', 'BrokenPipeError', 'BufferError', 'BytesWarning', 'ChildProcessError', 'ConnectionAbortedError', 'ConnectionError', 'ConnectionRefusedError', 'ConnectionResetError', 'DeprecationWarning', 'EOFError', 'Ellipsis', 'EncodingWarning', 'EnvironmentError', 'Exception', 'ExceptionGroup', 'False', 'FileExistsError', 'FileNotFoundError', 'FloatingPointError', 'FutureWarning', 'GeneratorExit', 'IOError', 'ImportError', 'ImportWarning', 'IndentationError', 'IndexError', 'InterruptedError', 'IsADirectoryError', 'KeyError', 'KeyboardInterrupt', 'LookupError', 'MemoryError', 'ModuleNotFoundError', 'NameError', 'None', 'NotADirectoryError', 'NotImplemented', 'NotImplementedError', 'OSError', 'OverflowError', 'PendingDeprecationWarning', 'PermissionError', 'ProcessLookupError', 'RecursionError', 'ReferenceError', 'ResourceWarning', 'RuntimeError', 'RuntimeWarning', 'StopAsyncIteration', 'StopIteration', 'SyntaxError', 'SyntaxWarning', 'SystemError', 'SystemExit', 'TabError', 'TimeoutError', 'True', 'TypeError', 'UnboundLocalError', 'UnicodeDecodeError', 'UnicodeEncodeError', 'UnicodeError', 'UnicodeTranslateError', 'UnicodeWarning', 'UserWarning', 'ValueError', 'Warning', 'WindowsError', 'ZeroDivisionError', '__build_class__', '__debug__', '__doc__', '__import__', '__loader__', '__name__', '__package__', '__spec__', 'abs', 'aiter', 'all', 'anext', 'any', 'ascii', 'bin', 'bool', 'breakpoint', 'bytearray', 'bytes', 'callable', 'chr', 'classmethod', 'compile', 'complex', 'copyright', 'credits', 'delattr', 'dict', 'dir', 'divmod', 'enumerate', 'eval', 'exec', 'exit', 'filter', 'float', 'format', 'frozenset', 'getattr', 'globals', 'hasattr', 'hash', 'help', 'hex', 'id', 'input', 'int', 'isinstance', 'issubclass', 'iter', 'len', 'license', 'list', 'locals', 'map', 'max', 'memoryview', 'min', 'next', 'object', 'oct', 'open', 'ord', 'pow', 'print', 'property', 'quit', 'range', 'repr', 'reversed', 'round', 'set', 'setattr', 'slice', 'sorted', 'staticmethod', 'str', 'sum', 'super', 'tuple', 'type', 'vars', 'zip']
+
+5). 1. Input and Output Functions   (3)
+print()   —   Displays output on the screen
+input()  —  Takes user input as a string
+format()  —  Formats a string
+
+2. Type Conversion Functions        (13)
+int() — Converts to an integer
+float() — Converts to a floating-point number
+complex() — Converts to a complex number
+str() — Converts to a string
+bool() — Converts to a boolean (True or False)
+list() — Converts to a list
+tuple() — Converts to a tuple
+set() — Converts to a set
+dict() — Converts to a dictionary
+frozenset() — Converts to an immutable set
+bytes() — Converts to a bytes object
+bytearray() — Creates a mutable byte array
+memoryview() — Creates a memory view object
+
+3. Mathematical Functions            (7)
+abs() — Returns the absolute value
+pow(x, y) — Returns x raised to the power y (x**y)
+round() — Rounds a number to the nearest integer or specified decimal places
+divmod(x, y) — Returns quotient and remainder (x // y, x % y)
+max() — Returns the largest value from an iterable
+min() — Returns the smallest value from an iterable
+sum(iterable) — Returns the sum of elements in an iterable
+
+4. Sequence and Iterable Functions          (10)
+len() — Returns the length of an object
+sorted(iterable) — Returns a sorted list
+reversed(iterable) — Returns a reversed iterator
+enumerate(iterable) — Returns index-value pairs of an iterable
+zip(*iterables) — Combines multiple iterables element-wise
+filter(function, iterable) — Filters elements based on a function
+map(function, iterable) — Applies a function to every element in an iterable
+range()  --  Generates a sequence of numbers.
+iter()  --  Returns an iterator for an object.
+next()  --  Retrieves the next item from an iterator.
+
+5. Object and Class Functions               (14)
+type(object) — Returns the type of an object
+id(object) — Returns the unique ID of an object
+isinstance(object, classinfo) — Checks if an object is an instance of a class
+issubclass(class, classinfo) — Checks if a class is a subclass of another
+callable(object) — Checks if an object is callable (like functions)
+dir(object) — Lists all attributes and methods of an object
+vars(object) — Returns the __dict__ attribute of an object
+hasattr(object, attribute) — Checks if an object has a specific attribute
+getattr(object, attribute) — Gets an attribute value of an object
+setattr(object, attribute, value) — Sets an attribute value of an object
+delattr(object, attribute) — Deletes an attribute of an object
+classmethod() --- Converts a method into a class method.
+staticmethod() --- Converts a method into a static method.
+super() --- Calls a method from the parent class
+
+6. File Handling Functions               (2)
+open(filename, mode) — Opens a file
+close() — Closes an open file
+
+7. Logical and Boolean Functions          (5)
+all(iterable) — Returns True if all elements in an iterable are True
+any(iterable) — Returns True if any element in an iterable is True
+bin(x) — Converts an integer to a binary string
+oct(x) — Converts an integer to an octal string
+hex(x) — Converts an integer to a hexadecimal string
+ 
+8. Memory and Performance Functions        (2)
+hash(object) — Returns the hash value of an object
+help(object) — Displays help documentation
+ 
+9. Special Functions                       (5)
+eval(expression) — Evaluates a string as a Python expression
+exec(code) — Executes Python code dynamically
+compile(source, filename, mode) — Compiles Python source code
+globals() — Returns the global symbol table
+locals() — Returns the local symbol table
+
+10. Other Useful Functions               (4)
+chr(code) — Converts a Unicode code to a character
+ord(character) — Converts a character to Unicode code
+ascii(object) — Returns a printable representation of an object
+repr(object) — Returns a string representation of an object
+
+6). python does not use int in function parameters , in python function parameters is seperated by commas
+7). python don't use int to declare variables.... sum is built in functions
+
+🚀 Plan for Step 1 (2-3 months)
+
+Python Basics (Done in 2-3 weeks) ✅
+Django (Backend Development) (1 month) ✅
+JavaScript Basics (2 weeks) ✅
+React.js & Next.js (1 month) ✅
+Portfolio & Freelancing (1 month) 
+
+8). return statement should return an expression not an assignment
+9). when there were nothing in return it returns none
+10). when you does not pass an argument in calling function then function call itself and give the result <function sum_n at 0x000002172ECFA340>
+11). if __name__ == "__main__":    #only runs when executed directly don't need functions, classes inside this
+12). python bydefault returns multiple values in tuple 

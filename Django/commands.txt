@@ -1,0 +1,4 @@
+1). django-admin startproject djangogfg
+2). python manage.py startapp myapp
+3). python manage.py makemigrations
+    python manage.py migrate

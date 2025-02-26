@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Form</title>
+</head>
+<body>
+    <h1>Submit Data</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if form.errors %}
+        <p style="color: red;">Please fix the errors in the form.</p>
+    {% endif %}
+</body>
+</html>
