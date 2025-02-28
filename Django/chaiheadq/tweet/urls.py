@@ -9,6 +9,7 @@ from django.urls import path
 from .views import tweet_list
 
 urlpatterns = [
+    path('', tweet_list, name='tweet-home'),
     path("tweets/", tweet_list, name="tweet-list"),  # when tweet/ url is accesed then tweet_list view function will be called
 ]
 

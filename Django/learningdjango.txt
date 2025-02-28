@@ -1,0 +1,9 @@
+1). Char field is used for small texts(max length)(varchar in database), Text field is used for large texts(no limit)(Text in database)
+2). Static media also add in urls.py they can not run directly
+    if settings.DEBUG:
+         urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+         urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+3). ORM - (Object relation mapping maps a python object to database instance)
+4). TextField does not have max_length.
+5). List View (ListAPIView) → Shows all objects (id1, id2, id3, ...)
+    Detail View (RetrieveAPIView) → Shows only one object (id = 1, id = 2, etc.)
