@@ -6,8 +6,7 @@ from rest_framework.response import Response
 from .models import Blogpost
 from .searializers import BlogPostSerializer
 from rest_framework.views import APIView
-    model = Model
-    template_name = ".html"
+    
 
 # Create your views here.
 
@@ -25,3 +24,24 @@ class BlogPostRetrieveUpdateDestroy(generics.RetrieveUpdateDestroyAPIView):    #
     lookup_field = "pk"    # pk stands for primary key , pk is also id of blogpost 
 
 class BlogPostList(APIView):  # APIView is base class for all drf views , it allows you to define custom api views using (cbvs) , methods like Get, Put, Post, Delete
+    def get(self, request, format=None):  # when get request is made to view this method executes
+        title = request.query_paramas.get("title","")  #.get("title","") fetches the value associated with the "title" query parameter from the request url
+
+        if title:
+            # we fitering the query set based on the title 
+            blog_posts = Blogpost.objects.filter(title__icontains=title) # is an django orm query that retrive blog posts from database where title contain specific keyword, case insensitive
+                    #Blogpost is django model representing blog posts in database
+                    #.objects is model manager which allows database queries
+                    #.filter is an query set to return only matching records
+        else:
+            #If no title is provided returns all blog posts
+            blog_posts = Blogpost.objects.all()
+
+        serializer = BlogPostSerializer(blog_posts,many=True)
+                #BlogPostSerializer is an class which converts django model instances into json format... which is used for api responses in query set
+                #and we are serializing multiple objects
+        return Response(serializer.data,status=status.HTTP_200_OK)  # is used in drf to send a structured api response with serialized data and status code
+                #Response is an drf class that sends http response 
+                #serializer.data contain serialized data, typically in json format
+                #sending status code 200 mean success
+

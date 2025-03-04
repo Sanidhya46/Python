@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
-
+# import os  # os module provide function to interact with
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-phpwsqpv)^^&-5*)k4v+#1x02x-n&#syis@j=qj-x=96x7slbt
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = []  # Allowed for any hosts
+# CSRF_TRUSTED_ORIGINS = ["http://*.on-acorn.io","https://*.on-acorn.io"]
 
 
 # Application definition
