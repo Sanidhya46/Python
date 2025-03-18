@@ -7,3 +7,10 @@
 4). TextField does not have max_length.
 5). List View (ListAPIView) → Shows all objects (id1, id2, id3, ...)
     Detail View (RetrieveAPIView) → Shows only one object (id = 1, id = 2, etc.)
+6). JWT (json web token) authentication is a secure way to verify user identity and exchange information between parties.
+          How jwt works -- i). user login
+                          ii). server generates jwt
+                         iii). token transmission
+                          iv). subsequent requests sends by client
+                           v). server verifies and responds
+                           

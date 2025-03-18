@@ -1,4 +1,17 @@
 1). django-admin startproject djangogfg
 2). python manage.py startapp myapp
-3). python manage.py makemigrations
-    python manage.py migrate
+3). python manage.py makemigrations    #translating changes in your models to database schema
+    python manage.py migrate           #Apply migrations to the database
+4). python manage.py showmigrations    #list of all migrations and their status
+5). python manage.py collectstatic     #collect all static files
+6). python manage.py runserver        
+7). pip install django djangorestframework    #it provides tools for building powerful Restful Apis, including serialisation,authentication and permissions
+8). pip install django-cors-headers       #
+9). pip install django-extensions      
+8). python manage.py show_urls
+9). python manage.py flush  # Clears all data and resets IDs
+10). venv\Scripts\activate  # activates virtual enviornment 
+11). python -m venv venv   # creates virtual enviornment
+12). pip install django djangorestframework djangorestframework-simplejwt  #JWT(json web token) is a modern authentication  mechanism that allows secure user authentication without needing session based authentication
+                                                                           # -simplejwt provides jwt based authentication support for DRF
+13). 
