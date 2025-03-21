@@ -16,7 +16,8 @@ class Company(models.Model):  #models.Model is from object relation mapper which
     added_date = models.DateTimeField(auto_now=True)  # It stores the time when your object is modified
     active = models.CharField(max_length=50,default=True)   #If no values is specified during object creation 
 
-
+    def __str__(self):
+        return self.name + "--" + self.type
 
 
 #Employee model 
