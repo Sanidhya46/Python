@@ -15,4 +15,4 @@ urlpatterns = [
 
 ]
 
-# if we want particular url company{company}/employees
+# if we want particular url company{companyid}/employees

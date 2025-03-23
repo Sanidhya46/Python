@@ -32,7 +32,16 @@ class Employee(models.Model):
         ('manager', 'manager'),
         ('software engineer','software engineer'),
         ('Project manager','Pl')
-    ))
+    ))  
+
+
+
+
+
+
+
+
+
 
     # In company there can be many employee model so we are going to use primary key one to many 
     # if you are writing inside other class then each instance of this model is linked with single instance of company
