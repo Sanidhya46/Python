@@ -128,3 +128,5 @@ li = ["apple", "banana", "cherry"]
 for i , j in enumerate(li):  #enumerate() function is used to loop through the list with the index
     print(f"Index {i} : {j}")
 print(list(enumerate(li)))
+
+def add(num1 : )

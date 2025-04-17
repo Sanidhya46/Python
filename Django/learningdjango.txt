@@ -13,4 +13,7 @@
                          iii). token transmission
                           iv). subsequent requests sends by client
                            v). server verifies and responds
-                           
+            three parts i).Header - header contains signing algorithm meta data of the user (meta data - data of data)   
+                       ii).Payload - contains the information about the user also called as a claim and some additional informaiton
+                       iii).Signatue - signature ensures the token integrity generated using the header, payload and security key.
+ 7). json response excepts a dictinory if you pass list then it shows error 

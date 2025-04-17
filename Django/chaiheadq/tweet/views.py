@@ -7,9 +7,8 @@
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from .models import Tweet  # Assuming you have a Tweet model
+from django.http import HttpResponse
 
-@csrf_exempt
+@csrf_exempt        # disables csrf (cross site request frogery) , csrf prevents unauthorised requests
 def tweet_list(request):
-    if request.method == "GET":
-        tweets = list(Tweet.objects.values())  # Convert QuerySet to list
-        return JsonResponse(tweets, safe=False)
+    return HttpResponse("This is the tweet list page!")  

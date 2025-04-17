@@ -47,3 +47,6 @@ class Employee(models.Model):
     # if you are writing inside other class then each instance of this model is linked with single instance of company
     # Foreign key comes from the company class
     company = models.ForeignKey(Company,on_delete=models.CASCADE)
+
+
+

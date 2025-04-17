@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-24lsg6^t(7ows^78wk)gmh5n7cnar0pq&h0p=&weph-(xaunq&'
+SECRET_KEY = 'django-insecure-40uav5nkc#z_-sy0*^8adxf!1%*+zg=+i4+5m*0sz1qhzlltdc'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,9 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
-    'rest_framework_simplejwt',
-    'accounts',  # adding this for authentication
 ]
 
 MIDDLEWARE = [
@@ -81,21 +78,6 @@ DATABASES = {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
-}
-
-REST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES': [     # this sets authentication system globally
-        # 'rest_framework.authentication.BasicAuthentication',   # authentication scheme uses HTTP Basic Authentication
-        # 'rest_framework.authentication.SessionAuthentication',  #session authentication uses django default session backend for authentiction . 
-        'rest_framework_simplejwt.authentication.JWTAuthentication',   # when added to default authentication classes this ensures that include a valid jwt token for authentication
- 
-    ]
-}
-from datetime import timedelta
-SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': timedelta(days=1),
-    'REFRESH_TOKEN_LIFETIME': timedelta(days=7),
-    'ROTATE_REFRESH_TOKENS': True,
 }
 
 
