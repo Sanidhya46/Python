@@ -4,7 +4,7 @@ from api.models import Employee
 class CompanySerializer(serializers.HyperlinkedModelSerializer):
     company_id = serializers.ReadOnlyField()  # only reads not modify by api 
     class Meta:  # it stores metadata of the serializer, it tells django how the serializers should behave which models it map to 
-        model = Company
+        model = Company    
         fields="__all__"
 
 class EmployeeSerializer(serializers.HyperlinkedModelSerializer):
