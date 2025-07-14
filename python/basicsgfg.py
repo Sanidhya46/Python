@@ -3,7 +3,7 @@ print("hello world")
 # This is single line coomment 
 """ this is multiline comment"""
 
-if 10>5:
+if 10>5:   
     print("10 is greater than 5")
 else:
     print("10 is less than 5")       
