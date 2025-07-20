@@ -9,7 +9,7 @@ else:
     print("10 is less than 5")       
 
 # Variables
-x = 5                 
+x = 5                    
 y = "Hello, World!"   
 print(x)
 print(y)
