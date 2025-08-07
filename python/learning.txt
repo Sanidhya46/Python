@@ -1,1 +1,1 @@
-1). python for loop is used for iterating over a sequence (List, Tuple, String) or other iterable objects
+1). python for loop is used for iterating over a sequence (List, Tuple, String) or other iterable objects       
