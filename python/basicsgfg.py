@@ -8,7 +8,7 @@ if 10>5:
 else:
     print("10 is less than 5")                
             
-# Variables
+# Variables               
 x = 5                    
 y = "Hello, World!"   
 print(x)
